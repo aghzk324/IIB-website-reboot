@@ -1,0 +1,121 @@
+/* header */
+#navbar_content > ul > li {
+    border: 2px solid #2858f6;
+    background-color: #2858f6;
+    margin-right: 5px;
+    border-radius: 26px;
+}
+#navbar_content > ul > li:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+#navbar_content > ul > li:active {
+    transition: all .0001s ease-in-out;
+    transform: scale(1.2);
+}
+#navbar_content > ul > li > a {
+    padding: 7px 12px;
+    font-size: 15px;
+}
+#logoutitem {
+    display: block;
+}
+#logoutitem > * {
+    display: inline-flex;
+}
+@media screen and (max-width: 1199px) {
+    #navbar_content > ul > li {
+        border: 2px solid #2858f6;
+        background-color: #2858f6;
+        border-radius: 26px;
+        width: 50vw;
+        margin: 0px auto 2px;
+    }
+    #navbar_content > ul > li > a {
+        padding: 5px 10px;
+        text-align: center;
+    }
+    #navbar_content > ul > li:hover {
+        transition: all .3s ease-in-out;
+        transform: scale(1.07);
+    }
+    #navbar_content > ul > li:active {
+        transition: all .0001s ease-in-out;
+        transform: scale(1.1);
+    }
+    #logoutitem {
+        width: 177.796875px;
+        margin: 0px auto;
+    }
+}
+
+
+/* footer */
+footer {
+    margin-top: 50px;
+}
+footer > * {
+    font-size: smaller;
+}
+
+
+/* IIB loading animation */
+.IIB_animate_container {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+.IIB_animate_container > img {
+    margin-top: 43vh;
+    width: 7vw;
+    height: auto;
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes loading {
+    0% {transform: scale(1.0) rotate(0deg)}
+    30% {transform: scale(1.3);}
+    60% {transform: scale(1.3) rotate(+359deg)}
+    100% {transform: scale(1.0) rotate(+360deg)}
+}
+
+/* CONTENT additional CSS library. a.k.a IIB CSS LIBRARY - optimize for IIB web */
+.underline_red_1 {
+    border-bottom: 1px solid red;
+}
+.underline_red_2 {
+    border-bottom: 2px solid red;
+}
+.underline_red_3 {
+    border-bottom: 3px solid red;
+}
+.underline_red_4 {
+    border-bottom: 4px solid red;
+}
+.text_red {
+    color: red;
+}
+.all_inline_block {
+    display: block;
+}
+.all_inline_block > * {
+    display: inline-block;
+}
+@media (max-width : 700px) {
+    img {
+        width: 60vw !important;
+    }
+    main {
+        width: 100vw !important;
+    }
+}
+main {
+    width: 80vw;
+    margin: 0px auto !important;
+    padding-top: 70px;
+}
+.align_center {
+    text-align: center;
+}
+

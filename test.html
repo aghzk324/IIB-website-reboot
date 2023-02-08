@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
+<script>
+    var array = {"header":"<nav style=\"-webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);\" class=\"navbar navbar-expand-lg navbar-dark\"> <div class=\"container-fluid\"> <img width=\"35\" src=\"https://drive.google.com/uc?export=view&id=1kej53D1RDSB196YKbRnHRm3V79n4suy7\" alt=\"error\" onclick=\"trangchu()\" > <a class=\"navbar-brand\" style=\"color: black; margin-left: 5px;\" onclick=\"trangchu()\" >IIB</a> <button class=\"navbar-toggler bg-success\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbar_content\" aria-controls=\"navbarsExample05\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"> <span class=\"navbar-toggler-icon\"></span> </button> <div class=\"collapse navbar-collapse\" id=\"navbar_content\"> <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\"> <li class=\"nav-item\"> <a class=\"nav-link\" aria-current=\"page\" href=\"#\" onclick=\"trangchu()\">Trang Chủ</a> </li><li class=\"nav-item\"> <a class=\"nav-link\" href=\"#\" onclick=\"aboutus()\">About Us - Về Chúng Tôi</a> </li><li class=\"nav-item\"> <a class=\"nav-link\" href=\"#\" onclick=\"file_()\">File</a> </li><li class=\"nav-item\"> <a class=\"nav-link\" href=\"#\" onclick=\"kho()\">Kho Lưu Trữ Thông Tin</a> </li><li class=\"nav-item\"> <a class=\"nav-link\" href=\"#\" onclick=\"kiemsoatvukhi()\">Kiểm Soát Vũ Khí</a> </li><li class=\"nav-item\"> <a class=\"nav-link\" href=\"#\" onclick=\"rdb()\">RDB</a> </li><li class=\"nav-item\"> <a class=\"nav-link\" href=\"#\" onclick=\"lienlac()\">Liên Lạc</a> </li></ul> <div id=\"logoutitem\" > <h5 style=\"padding-top: 5px; margin-top: auto; margin-bottom: auto;\">Welcome! <output id=\"u_name\" ></output></h5> <button type=\"button\" class=\"btn btn-danger\" style=\"margin-left: 3px\" onclick=\"logout()\" >Log out</button> </div></div></div></nav>","trangchu":"","footer":""}
+    var array2 = JSON.stringify(array)
+    sessionStorage.setItem('test', array2)
+    var array3 = JSON.parse(sessionStorage.getItem('test'))
+    document.querySelector('.one').innerHTML = JSON.parse(sessionStorage.getItem('test'))
+</script>
+</body>
+</html>
