@@ -110,7 +110,10 @@ footer > * {
         width: 60vw !important;
     }
     main {
-        width: 100vw !important;
+        width: 95vw !important;
+    }
+    footer {
+        width: 95vw !important;
     }
     iframe {
         width: 85vw !important;
